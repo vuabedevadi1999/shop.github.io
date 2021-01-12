@@ -12,7 +12,7 @@ class CategorySeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        for($i=0;$i<100;$i++){
+        for($i=0;$i<5;$i++){
             $category = new Category();
             $category->category_name = $faker->name;
             $category->category_desc = $faker->paragraph(1000);
@@ -20,7 +20,7 @@ class CategorySeeder extends Seeder
                 $category->category_status = STATUS_PRODUCT_NONACTIVE;
             }else {
                 $category->category_status = STATUS_PRODUCT_ACTIVE;
-            }
+            }S
             $category->save();
         }
     }
