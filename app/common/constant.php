@@ -1,0 +1,3 @@
+<?php
+define('STATUS_PRODUCT_ACTIVE',1);
+define('STATUS_PRODUCT_NONACTIVE',0);
